@@ -66,7 +66,7 @@ Open:
 http://127.0.0.1:5000/
 🔗 Demo Video
 
-
+https://drive.google.com/file/d/1PT4GAd2hgcBS4BgivCMu8VU1i7jQg3Ig/view?usp=sharing
 
 🌍 Vision
 

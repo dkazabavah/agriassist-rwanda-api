@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AgriAssist Pro Dashboard</title>
+
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+    <link rel="stylesheet" href="/static/css/dark.css">
+
+</head>
+
+<body>
+
+<nav>
+    <h1>🌱 AgriAssist Pro</h1>
+
+    <button onclick="toggleDarkMode()">
+        🌙 Dark Mode
+    </button>
+</nav>
+
+
+<section class="cards">
+
+    <div class="card">
+        <h3>🌦 Weather</h3>
+        <p id="weather">Loading...</p>
+    </div>
+
+
+    <div class="card">
+        <h3>💰 Market Prices</h3>
+        <p id="markets">Loading...</p>
+    </div>
+
+
+    <div class="card">
+        <h3>🦠 Diseases</h3>
+        <p id="diseases">Loading...</p>
+    </div>
+
+
+    <div class="card">
+        <h3>🌾 Farming Tips</h3>
+        <p id="tips">Loading...</p>
+    </div>
+
+</section>
+
+
+<section class="calendar">
+
+<h2>📅 Planting Calendar</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Crop</th>
+<th>Season</th>
+<th>Harvest</th>
+<th>Region</th>
+</tr>
+</thead>
+
+<tbody id="calendar">
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<script src="/static/js/darkmode.js"></script>
+<script src="/static/js/app.js"></script>
+
+
+</body>
+</html>

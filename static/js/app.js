@@ -115,4 +115,95 @@ JSON.stringify(data);
 
 });
 
+function askAI(){
+
+let q=document.getElementById("question").value.toLowerCase();
+
+let answer="";
+
+if(q.includes("maize")){
+
+answer="Plant maize during rainy seasons and monitor pests regularly.";
+
+}
+
+else if(q.includes("fertilizer")){
+
+answer="Use compost and balanced NPK fertilizer.";
+
+}
+
+else{
+
+answer="Maintain soil health, check weather patterns and use sustainable farming.";
+
+}
+
+
+document.getElementById("answer").innerHTML=answer;
+
+}
+
+
+
+function searchCrop(){
+
+let crop=document.getElementById("cropSearch").value;
+
+
+fetch("/api/crops?search="+crop)
+
+.then(res=>res.json())
+
+.then(data=>{
+
+document.getElementById("cropResults").innerHTML=
+JSON.stringify(data);
+
+});
+
+}
+
+
+
+function searchDisease(){
+
+let disease=document.getElementById("diseaseSearch").value;
+
+
+fetch("/api/diseases")
+
+.then(res=>res.json())
+
+.then(data=>{
+
+document.getElementById("diseaseResults").innerHTML=
+JSON.stringify(data);
+
+});
+
+}
+
+
+
+fetch("/api/tips")
+.then(res=>res.json())
+.then(data=>{
+
+document.getElementById("tips").innerHTML=
+JSON.stringify(data);
+
+});
+
+
+
+fetch("/api/markets")
+.then(res=>res.json())
+.then(data=>{
+
+document.getElementById("markets").innerHTML=
+JSON.stringify(data);
+
+});
+
 loadDashboard()

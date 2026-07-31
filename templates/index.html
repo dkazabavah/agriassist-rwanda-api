@@ -1,33 +1,64 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AgriAssist Pro | AI Agriculture Platform</title>
 
 
-{% block content %}
+<link rel="stylesheet" href="/static/css/style.css">
 
 
-<div class="hero">
+</head>
 
+
+<body>
+
+
+<nav>
+
+<div class="logo">
+🌱 AgriAssist Pro
+</div>
+
+
+<div>
+
+<button onclick="toggleDarkMode()">
+🌙
+</button>
+
+</div>
+
+
+</nav>
+
+
+
+
+<section class="hero">
+
+
+<div>
 
 <h1>
-🌱 AgriAssist Pro
+Smart Farming Powered by AI
 </h1>
 
 
-<h2>
-Smart Agriculture Platform for Rwanda Farmers
-</h2>
-
-
 <p>
-AI-powered farming recommendations,
-weather intelligence,
-market prices and crop protection.
+AgriAssist Pro helps farmers make better decisions using artificial intelligence,
+weather intelligence, crop recommendations and market insights.
 </p>
 
 
-<a href="/dashboard">
+<a href="#platform">
 
 <button>
-Start Farming Smarter
+Explore Platform
 </button>
 
 </a>
@@ -36,4 +67,278 @@ Start Farming Smarter
 </div>
 
 
-{% endblock %}
+</section>
+
+
+
+
+
+<section id="platform" class="container">
+
+
+<div class="card">
+
+<h2>
+🌦 Weather Intelligence
+</h2>
+
+<p id="weather">
+Loading weather...
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>
+🤖 AI Farmer Assistant
+</h2>
+
+
+<input 
+id="question"
+placeholder="Ask AI about farming...">
+
+
+<button onclick="askAI()">
+Ask
+</button>
+
+
+<p id="answer">
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+🌱 Crop Search
+</h2>
+
+
+<input 
+id="cropSearch"
+placeholder="Search crops...">
+
+
+<button onclick="searchCrop()">
+Search
+</button>
+
+
+<div id="cropResults">
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+🦠 Crop Disease Detection
+</h2>
+
+
+<input
+id="diseaseSearch"
+placeholder="Search disease">
+
+
+<button onclick="searchDisease()">
+Search
+</button>
+
+
+<div id="diseaseResults">
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+💰 Market Prices
+</h2>
+
+
+<div id="markets">
+
+Loading...
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+📈 Market Trends
+</h2>
+
+
+<canvas id="marketChart">
+
+</canvas>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+🌾 Farming Recommendations
+</h2>
+
+
+<div id="tips">
+
+Loading...
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="about">
+
+
+<h2>
+Why AgriAssist Pro?
+</h2>
+
+
+<div class="features">
+
+
+<div>
+<h3>
+AI Decision Support
+</h3>
+
+<p>
+Get farming recommendations based on crops, seasons and conditions.
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+Market Intelligence
+</h3>
+
+<p>
+Monitor prices and make better selling decisions.
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+Digital Agriculture
+</h3>
+
+<p>
+Connecting technology with farmers across Rwanda and Africa.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 AgriAssist Pro | Building the future of African agriculture 🌍
+</p>
+
+
+</footer>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="/static/js/app.js"></script>
+
+<script src="/static/js/charts.js"></script>
+
+<script src="/static/js/darkmode.js"></script>
+
+
+</body>
+
+
+</html>

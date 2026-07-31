@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Maize",
+        "season": "March - June",
+        "water": "Medium",
+        "soil": "Loamy Soil",
+        "region": "Eastern Province"
+    },
+    {
+        "name": "Beans",
+        "season": "September - December",
+        "water": "Low",
+        "soil": "Fertile Soil",
+        "region": "Northern Province"
+    },
+    {
+        "name": "Rice",
+        "season": "April - August",
+        "water": "High",
+        "soil": "Clay Soil",
+        "region": "Eastern Province"
+    },
+    {
+        "name": "Cassava",
+        "season": "Year Round",
+        "water": "Low",
+        "soil": "Sandy Soil",
+        "region": "Southern Province"
+    }
+]

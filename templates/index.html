@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AgriAssist Rwanda</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌱 AgriAssist Rwanda</h1>
+
+    <p>
+        Smart farming assistant helping farmers make better decisions using technology.
+    </p>
+
+
+    <section>
+        <h2>Search Crop Information</h2>
+
+        <input 
+            id="cropSearch" 
+            placeholder="Enter crop name (e.g. maize)"
+        >
+
+        <button onclick="searchCrop()">
+            Search
+        </button>
+
+        <div id="cropResults"></div>
+    </section>
+
+
+    <section>
+
+        <h2>Check Weather</h2>
+
+        <input 
+            id="city"
+            placeholder="Enter city (e.g. Kigali)"
+        >
+
+        <button onclick="getWeather()">
+            Check
+        </button>
+
+        <div id="weatherResult"></div>
+
+    </section>
+
+</div>
+
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

@@ -1,3 +1,4 @@
+from utils.recommendations import recommend_crop
 from flask import Flask, render_template, request, jsonify
 import requests
 import os
@@ -66,9 +67,28 @@ def get_markets():
     return jsonify(markets)
 
 
+@app.route("/chatbot")
+def chatbot():
+    return render_template("chatbot.html")
+
+
+@app.route("/diseases")
+def diseases():
+    return render_template("diseases.html")
+
+
+@app.route("/markets")
+def market_page():
+    return render_template("markets.html")
+
 @app.route("/api/calendar")
 def get_calendar():
     return jsonify(calendar)
+
+
+@app.route("/markets")
+def markets():
+    return render_template("markets.html")
 
 
 @app.route("/api/weather")
@@ -108,6 +128,18 @@ def weather():
         }),500
 
 
+@app.route("/api/recommend", methods=["POST"])
+def recommendation():
+
+    data=request.json
+
+    result = recommend_crop(
+        data.get("soil"),
+        data.get("season"),
+        data.get("water")
+    )
+
+    return jsonify(result)
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}
+AI Farmer Assistant
+{% endblock %}
+
+
+{% block content %}
+
+<div class="card chatbot">
+
+<h1>🤖 AgriAssist AI Farmer Assistant</h1>
+
+<div id="messages">
+
+<p>
+AI: Hello farmer 🌱. Ask me about crops, diseases, weather or farming.
+</p>
+
+</div>
+
+
+<input id="question"
+placeholder="Ask your farming question...">
+
+
+<button onclick="askAI()">
+Send
+</button>
+
+
+</div>
+
+
+<script src="/static/js/chatbot.js"></script>
+
+{% endblock %}

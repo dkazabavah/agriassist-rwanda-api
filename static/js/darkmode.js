@@ -1,21 +1,22 @@
-const button = document.getElementById("theme-toggle");
-
-
-button.addEventListener("click",()=>{
+function toggleDarkMode(){
 
 document.body.classList.toggle("dark");
 
-
 localStorage.setItem(
-"theme",
+"dark",
 document.body.classList.contains("dark")
 );
 
-});
+}
 
 
-if(localStorage.getItem("theme") === "true"){
+
+window.onload=function(){
+
+if(localStorage.getItem("dark")=="true"){
 
 document.body.classList.add("dark");
+
+}
 
 }

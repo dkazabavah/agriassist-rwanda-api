@@ -1,0 +1,19 @@
+[
+    {
+        "soil":"Volcanic",
+        "best_crops":["Potatoes","Beans","Vegetables"]
+    },
+    {
+        "soil":"Clay",
+        "best_crops":["Rice","Maize"]
+    },
+    {
+        "soil":"Loam",
+        "best_crops":["Maize","Beans","Tomatoes"]
+    },
+    {
+        "soil":"Sandy",
+        "best_crops":["Cassava","Sweet Potatoes"]
+    }
+]
+

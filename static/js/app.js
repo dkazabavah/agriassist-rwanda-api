@@ -61,5 +61,58 @@ async function loadDashboard(){
 
 }
 
+function askAI(){
+
+let q=document.getElementById("question").value;
+
+
+let answer="";
+
+
+if(q.toLowerCase().includes("maize")){
+
+answer="Plant maize during rainy seasons. Use fertilizer and monitor fall armyworm.";
+
+}
+
+else if(q.toLowerCase().includes("fertilizer")){
+
+answer="Use compost manure and balanced NPK fertilizer.";
+
+}
+
+else{
+
+answer="AI recommendation: Maintain soil health, monitor weather and track crops.";
+
+}
+
+
+document.getElementById("answer").innerHTML=answer;
+
+}
+
+
+
+
+fetch("/api/tips")
+.then(res=>res.json())
+.then(data=>{
+
+document.getElementById("tips").innerHTML=
+JSON.stringify(data);
+
+});
+
+
+
+fetch("/api/markets")
+.then(res=>res.json())
+.then(data=>{
+
+document.getElementById("markets").innerHTML=
+JSON.stringify(data);
+
+});
 
 loadDashboard()

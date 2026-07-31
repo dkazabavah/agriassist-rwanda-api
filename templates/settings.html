@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AgriAssist Pro Settings</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/dark.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>⚙️ AgriAssist Pro Settings</h1>
+
+<div class="card">
+
+<h2>Appearance</h2>
+
+<label>
+<input type="checkbox" onclick="toggleDarkMode()">
+ Enable Dark Mode
+</label>
+
+</div>
+
+
+<div class="card">
+
+<h2>Farmer Profile</h2>
+
+<input placeholder="Farmer Name">
+
+<select>
+<option>Small Scale Farmer</option>
+<option>Commercial Farmer</option>
+</select>
+
+
+<select>
+<option>Rice</option>
+<option>Maize</option>
+<option>Beans</option>
+<option>Potatoes</option>
+</select>
+
+</div>
+
+
+<div class="card">
+
+<h2>Notifications</h2>
+
+<label>
+<input type="checkbox" checked>
+ Weather Alerts
+</label>
+
+<br>
+
+<label>
+<input type="checkbox" checked>
+ Market Price Updates
+</label>
+
+<br>
+
+<label>
+<input type="checkbox">
+ Disease Warnings
+</label>
+
+</div>
+
+
+<a href="/dashboard">
+<button>
+Back to Dashboard
+</button>
+</a>
+
+
+</div>
+
+
+<script src="/static/js/darkmode.js"></script>
+
+</body>
+</html>

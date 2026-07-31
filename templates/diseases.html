@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+<div class="card">
+
+<h1>🦠 Crop Disease Detection</h1>
+
+
+<input id="searchDisease"
+placeholder="Search disease..."
+onkeyup="searchDisease()">
+
+
+
+<div id="results"></div>
+
+
+</div>
+
+
+
+<script src="/static/js/disease.js"></script>
+
+
+{% endblock %}

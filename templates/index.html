@@ -1,154 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>AgriAssist Rwanda | Smart Farming Platform</title>
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
-    <script defer src="{{ url_for('static', filename='js/darkmode.js') }}"></script>
-</head>
-
-<body>
-
-<header class="navbar">
-
-    <div class="logo">
-        🌱 AgriAssist Rwanda
-    </div>
-
-    <nav>
-        <a href="#features">Features</a>
-        <a href="#dashboard">Dashboard</a>
-        <a href="#about">About</a>
-
-        <button id="theme-toggle">
-            🌙
-        </button>
-    </nav>
-
-</header>
+{% extends "base.html" %}
 
 
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h1>
-            Smart Farming Decisions
-            <span>Powered by Data</span>
-        </h1>
-
-        <p>
-            Helping Rwandan farmers improve productivity through
-            weather intelligence, crop recommendations and agricultural insights.
-        </p>
+{% block content %}
 
 
-        <div class="hero-buttons">
-
-            <a href="/dashboard" class="primary-btn">
-                Explore Dashboard
-            </a>
-
-            <a href="#features" class="secondary-btn">
-                Learn More
-            </a>
-
-        </div>
-
-    </div>
+<div class="hero">
 
 
-    <div class="hero-card">
+<h1>
+🌱 AgriAssist Pro
+</h1>
 
-        <h3>
-            Today's Farming Overview
-        </h3>
-
-        <div class="stat">
-            🌦 Weather
-            <strong>24°C</strong>
-        </div>
-
-
-        <div class="stat">
-            🌱 Recommended Crop
-            <strong>Beans</strong>
-        </div>
-
-
-        <div class="stat">
-            💧 Rain Chance
-            <strong>75%</strong>
-        </div>
-
-
-    </div>
-
-
-</section>
-
-
-
-<section id="features" class="features">
 
 <h2>
-Powerful Farming Tools
+Smart Agriculture Platform for Rwanda Farmers
 </h2>
 
 
-<div class="cards">
-
-
-<div class="card">
-<h3>🌦 Weather Intelligence</h3>
 <p>
-Get live weather information and farming recommendations.
+AI-powered farming recommendations,
+weather intelligence,
+market prices and crop protection.
 </p>
-</div>
 
 
-<div class="card">
-<h3>🌱 Crop Recommendations</h3>
-<p>
-Discover suitable crops based on conditions.
-</p>
-</div>
+<a href="/dashboard">
 
+<button>
+Start Farming Smarter
+</button>
 
-<div class="card">
-<h3>🦠 Disease Checker</h3>
-<p>
-Identify common crop diseases and solutions.
-</p>
-</div>
-
-
-<div class="card">
-<h3>💰 Market Insights</h3>
-<p>
-Understand crop prices and farming opportunities.
-</p>
-</div>
+</a>
 
 
 </div>
 
-</section>
 
-
-
-<footer>
-
-<p>
-© 2026 AgriAssist Rwanda | Smart Agriculture Platform
-</p>
-
-</footer>
-
-
-</body>
-</html>
+{% endblock %}

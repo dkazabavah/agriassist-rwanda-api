@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>{% block title %}AgriAssist Pro{% endblock %}</title>
+
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="/static/css/dashboard.css">
+<link rel="stylesheet" href="/static/css/dark.css">
+
+</head>
+
+
+<body>
+
+
+<nav class="navbar">
+
+<h2>🌱 AgriAssist Pro</h2>
+
+<div>
+
+<a href="/">Home</a>
+<a href="/dashboard">Dashboard</a>
+<a href="/settings">Settings</a>
+
+<button onclick="toggleDarkMode()">
+🌙
+</button>
+
+</div>
+
+</nav>
+
+
+
+{% block content %}
+
+{% endblock %}
+
+
+
+<footer>
+
+<p>
+AgriAssist Pro © 2026 | Smart Farming for Rwanda 🇷🇼
+</p>
+
+</footer>
+
+
+
+<script src="/static/js/darkmode.js"></script>
+
+</body>
+
+</html>

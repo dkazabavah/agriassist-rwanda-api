@@ -1,0 +1,251 @@
+:root {
+
+    --primary: #16a34a;
+    --secondary: #22c55e;
+    --background: #f8fafc;
+    --text: #111827;
+    --card: white;
+
+}
+
+
+.dark {
+
+    --background:#0f172a;
+    --text:white;
+    --card:#1e293b;
+
+}
+
+
+
+* {
+
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family:Arial, sans-serif;
+
+}
+
+
+
+body {
+
+background:var(--background);
+color:var(--text);
+transition:.3s;
+
+}
+
+
+
+.navbar {
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+
+}
+
+
+
+.logo {
+
+font-size:24px;
+font-weight:bold;
+
+}
+
+
+
+nav {
+
+display:flex;
+gap:25px;
+align-items:center;
+
+}
+
+
+
+nav a {
+
+text-decoration:none;
+color:var(--text);
+
+}
+
+
+
+#theme-toggle {
+
+border:none;
+padding:10px;
+border-radius:50%;
+cursor:pointer;
+
+}
+
+
+
+.hero {
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 8%;
+gap:40px;
+
+}
+
+
+
+.hero-content {
+
+max-width:600px;
+
+}
+
+
+
+.hero h1 {
+
+font-size:55px;
+line-height:1.1;
+
+}
+
+
+
+.hero h1 span {
+
+color:var(--primary);
+
+}
+
+
+
+.hero p {
+
+margin:25px 0;
+font-size:20px;
+
+}
+
+
+
+.hero-buttons {
+
+display:flex;
+gap:20px;
+
+}
+
+
+
+.primary-btn,
+.secondary-btn {
+
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+
+}
+
+
+
+.primary-btn {
+
+background:var(--primary);
+color:white;
+
+}
+
+
+
+.secondary-btn {
+
+border:2px solid var(--primary);
+color:var(--primary);
+
+}
+
+
+
+.hero-card {
+
+background:var(--card);
+padding:30px;
+border-radius:20px;
+width:350px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+
+
+.stat {
+
+display:flex;
+justify-content:space-between;
+padding:20px 0;
+
+}
+
+
+
+.features {
+
+padding:60px 8%;
+
+}
+
+
+
+.features h2 {
+
+text-align:center;
+font-size:40px;
+
+}
+
+
+
+.cards {
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+
+}
+
+
+
+.card {
+
+background:var(--card);
+padding:30px;
+border-radius:20px;
+transition:.3s;
+
+}
+
+
+
+.card:hover {
+
+transform:translateY(-10px);
+
+}
+
+
+
+footer {
+
+text-align:center;
+padding:30px;
+
+}

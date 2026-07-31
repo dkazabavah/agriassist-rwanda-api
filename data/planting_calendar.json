@@ -1,0 +1,37 @@
+[
+    {
+        "crop": "Maize",
+        "planting_season": "September - November",
+        "harvesting_period": "January - March",
+        "region": "Eastern Province",
+        "notes": "Requires good rainfall and well-drained soil."
+    },
+    {
+        "crop": "Beans",
+        "planting_season": "February - March",
+        "harvesting_period": "May - June",
+        "region": "Northern Province",
+        "notes": "Popular crop in Rwanda with high market demand."
+    },
+    {
+        "crop": "Rice",
+        "planting_season": "March - April",
+        "harvesting_period": "July - August",
+        "region": "Wetlands",
+        "notes": "Needs irrigation and water-controlled fields."
+    },
+    {
+        "crop": "Potatoes",
+        "planting_season": "February - April",
+        "harvesting_period": "June - July",
+        "region": "Musanze",
+        "notes": "Best grown in cooler high-altitude areas."
+    },
+    {
+        "crop": "Tomatoes",
+        "planting_season": "January - February",
+        "harvesting_period": "April - May",
+        "region": "Kigali and Southern Province",
+        "notes": "Requires pest monitoring and regular watering."
+    }
+]

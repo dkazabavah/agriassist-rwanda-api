@@ -1,0 +1,30 @@
+[
+    {
+        "crop": "Maize",
+        "market": "Kimironko Market",
+        "price": 450,
+        "currency": "RWF/kg",
+        "trend": "Increasing"
+    },
+    {
+        "crop": "Beans",
+        "market": "Kigali Central Market",
+        "price": 900,
+        "currency": "RWF/kg",
+        "trend": "Stable"
+    },
+    {
+        "crop": "Rice",
+        "market": "Nyabugogo Market",
+        "price": 1200,
+        "currency": "RWF/kg",
+        "trend": "Increasing"
+    },
+    {
+        "crop": "Potatoes",
+        "market": "Musanze Market",
+        "price": 350,
+        "currency": "RWF/kg",
+        "trend": "Decreasing"
+    }
+]

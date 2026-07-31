@@ -1,0 +1,30 @@
+[
+    {
+        "crop": "Maize",
+        "disease": "Fall Armyworm",
+        "symptoms": "Leaves have holes and damaged sections.",
+        "prevention": "Monitor fields regularly and practice crop rotation.",
+        "treatment": "Use recommended pest control methods."
+    },
+    {
+        "crop": "Tomato",
+        "disease": "Late Blight",
+        "symptoms": "Dark spots appear on leaves and stems.",
+        "prevention": "Avoid excessive moisture and overcrowding.",
+        "treatment": "Apply approved fungicides."
+    },
+    {
+        "crop": "Potato",
+        "disease": "Early Blight",
+        "symptoms": "Brown circular spots on leaves.",
+        "prevention": "Use healthy seeds and rotate crops.",
+        "treatment": "Remove infected plants."
+    },
+    {
+        "crop": "Beans",
+        "disease": "Bean Rust",
+        "symptoms": "Orange spots appear on leaves.",
+        "prevention": "Plant resistant varieties.",
+        "treatment": "Use appropriate fungicide."
+    }
+]
